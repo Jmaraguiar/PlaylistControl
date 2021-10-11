@@ -1,0 +1,1 @@
+Um site que proporciona o uso de um interface para controlar uma playlist de musicas. (em andamento)
