@@ -10,14 +10,11 @@ background-size: cover;
 }
 
 .disc{
-    position: absolute;
-    left: 127px;
-    top: 30px;
+    margin-top: 20px;
     background-size: cover;
     width: 200px;
     height: 200px;
     border-radius: 100%;
-    box-shadow:0 5px 10px rgba(0, 0, 0, 0.267);
 
 }
 
@@ -33,12 +30,19 @@ background-size: cover;
 }
 
 .container{
+
+    display: flex;
+    flex-flow:row-reverse wrap;
+    justify-content: center;
+    align-content: center;
+
+    
     background-color: white;
     position: relative;
     margin: auto;
     margin-top: 13%;
     background-color: none;
-    width: 30%;
+    max-width: 30%;
     border-radius: 20px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.61);
 }
@@ -47,8 +51,6 @@ background-size: cover;
 .controle{
     margin: auto;
     text-align: center;
-    width: 400px;
-    height: 300px;
 
     visibility: hidden;
     transition: 0.4s;
@@ -62,15 +64,18 @@ transition: 0.4s;
 }
 
 .btn{
-    position: relative;
+    justify-self: end;
     padding: 8px;
     width: 40px;
-    top: 80%;
 }
 
 .title{
-    position: relative;
-    top: 235px;
     text-align: center;
-    padding: 10px;
+}
+
+@media screen and (max-width: 760px) {
+    .container{
+        margin-top: 120px;
+        max-width: 70%;
+    }
 }
